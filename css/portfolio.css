@@ -1,0 +1,406 @@
+@charset "utf-8";
+
+/* ======== Setting ======== */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none; color: #333;}
+ul{list-style: none;}
+
+.bgc {background-color: #F2F2F2;}	
+
+body{
+	font-size: 20px;
+	font-family: 'Noto Sans KR', sans-serif; 
+	/* color: #333; */
+	color: #0d0d0d;
+}
+section{overflow: hidden;}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,300;1,400&display=swap');
+
+/* 표지 */
+
+.main{
+	width: 100%;
+	height: 100vh;
+	background-color: #d7ccc8;
+}
+
+.logo{
+	display: block;
+	width: 120px;
+	height: 35px;
+}
+.main_hd{
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 100px;
+	border-bottom: 1px solid #0D0D0D;
+	align-items: center;
+}
+.main_hd p{
+	display: inline;
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-size: 25px;
+}
+.main_content{
+	width: 100%;
+	height: 80%;
+	border-bottom: 2px solid #0D0D0D;
+	position: relative;
+}
+.main_content_title {
+	position: absolute;
+	left: 100px;
+	bottom: 50px;
+	animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.main_content p{
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-size: 90px;
+	font-weight: 500;
+}
+
+
+/* ==================== 프로필 ==================== */
+
+.profile{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	gap: 300px;
+}
+.profile__wrap{
+	text-align: center;
+}
+.profile__intro {
+	margin-top: 50px;
+}
+.profile__intro div:nth-child(3){
+	display: inline-block;
+	padding: 20px 0;
+}
+.profile__img .img{
+	width: 400px;
+	height: 400px;
+	background-color: #f2f2f2;
+}
+
+.education__wrap p {
+	margin-bottom: 5px;
+}
+.date {
+	color: #999;
+}
+.profile__description .profile_hd{
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-size: 30px;
+	text-transform: uppercase;
+    color: #0D0D0D;
+	border-bottom: 1px solid #000;
+	margin-bottom: 10px;
+}
+.skills {
+	margin: 40px 0px;
+}
+.skill-icon{
+	display: inline-block;
+	width: 55px;
+	height: 55px;
+	margin-top: 10px;
+	margin-right: 20px
+}
+.contact p{
+	margin-bottom: 5px;
+}
+
+/* ==================== 소개 ==================== */
+
+
+.about {
+	width: 100%;
+}
+.about_me{
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	text-align: center;
+	color: #0D0D0D;
+	font-size: 65px;
+	margin-bottom: 100px;
+}
+
+.about_wrap{ display: flex; 
+	justify-content: center;
+	align-items: center;
+}
+
+.about_wrap div {
+	width: 380px;
+	height: 380px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 380px;
+	font-size: 23px;
+}
+
+.about_wrap div:nth-child(1){background-color: #ece4dd;
+	opacity: 0.9;
+	position: relative;
+	left: 30px;	
+}
+.about_wrap div:nth-child(2) {
+	background-color: #bc9273;
+	z-index: 5;
+	opacity: 0.5;
+	color: #000;
+}
+.about_wrap div:nth-child(3){
+	background-color: #937455;
+	color: #e0e0e0;
+	opacity: 0.5;
+	position: relative;
+	right: 30px;
+}
+.intro_wrap{
+	display:flex;
+	justify-content: center;
+	margin-top: 100px;
+}
+.intro_wrap p {
+	width: 380px;
+	height: 130px;
+	text-align: center;
+}
+
+/* ==================== web  ====================*/
+
+.web {
+	width: 100%;
+	height: 100vh;
+}
+.title {
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	padding: 30px 30px 10px 100px;
+	font-size: 50px;
+}
+.web_site {
+	flex-grow: 1;
+	overflow: hidden;
+	text-align: center;
+}
+.web_site_img{
+	width: 750px;
+	height: 550px;
+}
+.web_title {
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-size: 35px;
+	margin: 15px 0;
+}
+.swiper-button-next{
+	color: #736F6E;
+	right: 20%;
+	cursor: pointer;
+}
+.swiper-button-prev{
+	color: #736F6E;
+	left: 20%;
+	cursor: pointer;
+}
+
+.btn_wrap a{
+	display: inline-block;
+	width: 180px;
+	height: 45px;
+	line-height: 45px;
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-size: 20px;
+	transition: 0.5s;
+	border: 1px solid #736F6E;
+	/* background-color: #ebeae9; */
+}
+.btn_wrap a:hover{
+	background-color: #736F6E;
+	color: #fff;
+}
+.btn_wrap a:nth-child(1){
+	margin-right: 20px;
+}
+.site_desc {
+	margin: 30px;
+	font-family: 'Roboto', sans-serif;
+	/* font-style: italic; */
+}
+
+/* ==================== design ==================== */
+
+.design{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.design_wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+}
+.box {
+	width: 400px;
+	height: 400px;
+	margin: 20px;
+	background-color: #ededed;
+} 
+
+/* ==================== footer ==================== */
+
+footer{
+	background-color: #D9CECC;
+	font-size: 18px;
+	text-align: center;
+	padding: 20px;
+
+}
+.copy{padding: 40px 0 0;}
+
+
+/* ==================== 태블릿 ==================== */
+
+@media screen and (max-width : 1200px) {
+	
+	.main .main_hd .logo{
+		width: 80px;
+		height: 25px;
+	}
+
+	.main_hd{padding: 30px 20px;}
+
+	.main_hd p{font-size: 20px;}
+
+	.main_content_title p{font-size: 60px;}
+
+
+	.profile {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding: 30px;
+		height: auto;
+	}
+	.img__bgc {
+		display: none;
+	}
+	.profile__intro {
+		margin-top: 20px;
+	}
+	.profile__description {
+		text-align: center;
+	}
+	.date {
+		display: block;
+	}
+
+	.about { height: auto; }
+
+	.about_me { font-size: 50px;}
+
+
+	.intro_wrap {gap: 0;}
+
+
+	.web{ height: auto;}
+
+
+}
+
+/* ==================== 모바일 ==================== */
+
+@media screen and (max-width : 800px) {
+	body {
+		font-size: 16px;
+	}
+	
+	.main_content_title {
+		left: 50px;
+		bottom: 50px;
+	}
+
+	.main_content_title p{font-size: 40px;}
+
+	.profile__img .img{
+		width: 250px;
+		height: 250px;
+	}
+	/* ====== about ====== */
+	.about_me {
+		margin-bottom: 50px;
+	}
+	.about_wrap div {
+		width: 150px;
+		height: 150px;
+		line-height: 150px;
+		font-size: 16px;
+	}
+	.intro_wrap {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 80px;
+	}
+	.intro_wrap p {
+		height: 80px;
+	}
+
+	.skill-icon{
+		width: 35px;
+		height: 35px;
+	}
+	.title{
+		font-size: 30px;
+		padding: 30px 30px 10px 10px;
+	}
+	.web_site{
+		margin-top: 20px;
+	}
+	.web_site_img{
+		width: 300px;
+		height: 200px;
+	}
+	.web_title{
+		font-size: 25px;
+	}
+	.btn_wrap a{
+		width: 140px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+	}
+	.swiper-button-prev,
+	.swiper-button-next{display: none;}
+
+	#typed1,
+	.copy{
+		font-size: 16px;
+	}
+}
+
